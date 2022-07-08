@@ -1,5 +1,3 @@
-import org.jetbrains.annotations.NotNull;
-
 public class BigInt {
     final long _denom = 1000000000000000L;
     final int _digitLen = 15;
@@ -23,7 +21,7 @@ public class BigInt {
         this.len = len;
     }
 
-    public BigInt(@NotNull String s) {
+    public BigInt(String s) {
         this.num = new long[_maxLen];
         len = 0;
         System.out.println(s + "\n");
@@ -45,7 +43,7 @@ public class BigInt {
     }
 
     //  n1 always < n2
-    public BigInt add(@NotNull BigInt num2) {
+    public BigInt add(BigInt num2) {
         long[] res = new long[_maxLen];
         long t = 0;
 
@@ -63,7 +61,7 @@ public class BigInt {
     }
 
     //  n1 always > n2
-    public BigInt subtract(@NotNull BigInt num2) {
+    public BigInt subtract(BigInt num2) {
         long[] res = new long[_maxLen];
         long t = 0;
         for (int i = 0; i < len; i++) {
@@ -95,7 +93,7 @@ public class BigInt {
         return res;
     }
 
-    public int compare(@NotNull BigInt num2) {
+    public int compare(BigInt num2) {
         if (len < num2.length()) {
             return -1;
         } else if (len > num2.length()) {

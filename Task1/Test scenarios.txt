@@ -3,13 +3,13 @@ CART PAGE
 1.	Check if all items can be added to cart
 
 2.  Cart page generated correctly with correct item list, prices and subtotal. 
-		Subtotal show too many decimal digits
+		(Subtotal show too many decimal digits)
 
 3.	Check if remove, update, empty cart buttons work as intended.
 
 CHECK OUT PAGE
 
-4.	All required field indicated by (*) and does not allowed empty, especially card detail.
+4.	All required field indicated by (*) does not allowed empty, especially card detail.
 
 5.	Check if order can be placed with all information entered, payment processed as intended.
 
@@ -26,4 +26,4 @@ CONTACT PAGE
 LOG IN
 
 10.	Check if user can log in / log out
-		Default password is visible in source file.
+		(Default password "letmein" is visible in source file)

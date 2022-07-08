@@ -10,22 +10,26 @@ public class Task2Challenge2 {
         s = s.replace(" ", "");
         s = s.toLowerCase();
 
-        int maxLen = 0;
-        char curChar;
-        char maxChar = 'a';
-        int l;
+        if (s.length() > 0) {
+            int maxLen = 0;
+            char curChar;
+            char maxChar = s.charAt(0);
+            int l;
 
-        while (s.length() > 0) {
-            System.out.println(s);
-            curChar = s.charAt(0);
-            l = s.length();
-            s = s.replace("" + curChar, "");
-            if (l - s.length() > maxLen) {
-                maxLen = l - s.length();
-                maxChar = curChar;
+            while (s.length() > 0) {
+                //System.out.println(s);
+                curChar = s.charAt(0);
+                l = s.length();
+                s = s.replace("" + curChar, "");
+                if (l - s.length() > maxLen) {
+                    maxLen = l - s.length();
+                    maxChar = curChar;
+                }
             }
-        }
 
-        System.out.println("" + maxChar);
+            System.out.println("Most occurrence character: " + maxChar);
+        } else {
+            System.out.println("Empty word");
+        }
     }
 }
